@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.movies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.movie {
+  max-width: 20rem;
+}
+.movie img {
+  width: 20rem;
+  height: 30rem;
+}
+.movie:hover img{
+  -webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.App {
+  width: 100%;
+  justify-content:first baseline;
+  align-items:baseline;
+  flex-direction: column;
+  padding: 10rem;
+  display: flex;
+}
+.App {
+  background: rgb(28, 138, 182);
+  padding: 1rem;
+  height: 30vh;
+}
+.App h1 {
+  font-size: 3rem;
+  color: black;
+}
+.App h1:hover{
+    background-color: black;
+    color:white;
+}
+.App input[type="text"] {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+
+}
+.App input[type="button"] {
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.App input[type="button"]:hover {
+  background-color: white;
+  color: black;
+}
